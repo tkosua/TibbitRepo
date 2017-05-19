@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.theopsyphertxt.tibbit.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:contentDescription="@string/content_description_background"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        app:srcCompat="@mipmap/background"
+        style="@style/AuthBackgroundImage"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthSubTitle"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer">
+
+        <EditText
+            android:id="@+id/usernameID"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_username"
+            style="@style/AuthEditText"/>
+
+        <EditText
+            android:id="@+id/passwordID"
+            android:inputType="textPassword"
+            android:hint="@string/hint_password"
+            style="@style/AuthEditText"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="@string/button_log_in"
+        android:padding="@dimen/margin16"
+        android:layout_centerVertical="true"
+        style="@style/AuthButton"/>
+
+    <TextView
+        android:id="@+id/signUpText"
+        android:text="@string/text_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin12"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

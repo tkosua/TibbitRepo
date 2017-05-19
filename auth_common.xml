@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/activity_login">
+
+    <!--   this file is an example of a reusable layout
+    <include/> tag is used to add it in a layout  -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        app:srcCompat="@mipmap/background"
+        style="@style/AuthBackgroundImage" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthSubTitle" />
+</merge>
